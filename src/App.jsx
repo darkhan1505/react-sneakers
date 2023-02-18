@@ -46,7 +46,6 @@ function App() {
 
 
   return (
-    <Route>
       <div className="wrapper clear">
         {draw && <Drawer onRemove={onRemoveItem} items={cartItems} style={{ position: "fixed" }} drawClose={() => setDraw(false)} />}
         <Header drawOpen={() => setDraw(true)} />
@@ -79,7 +78,6 @@ function App() {
         </div>
 
       </div>
-    </Route>
   );
 }
 
